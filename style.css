@@ -27,14 +27,101 @@ header {
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
 }
-/*Website Title*/
-#logo{
-    display: inline-block;
-    margin-right: 2rem;
-}
- 
 
- 
+/*container*/
+#container {
+    display: flex;
+    flex-direction: row;
+}
+
+/*left container*/
+#left-container {
+    /*border: 0.5px solid red;*/
+    width: 14rem;
+    margin: 0px;
+}
+
+/*right container*/
+#right-container {
+    height: fit-content;
+    border: none;
+    width: 8rem;
+    /*border: 0.5px solid blue;*/
+    border: 0.5px solid rgb(20, 176, 77);
+}
+
+/*dropdown div*/
+#dropdown-div {
+    display: flex;
+    flex-direction: row;
+}
+
+/*hamburger div*/
+#hamburger-div {
+    
+    display: flex;
+    justify-content: right;
+    /*border: 0.5px solid red; */
+    border: 0.5px solid rgb(209, 227, 17);
+    padding: 0px;
+}
+
+/*hamburger icon*/
+.fa-solid {
+    
+    margin-bottom: 0.1em;
+    padding-top: 0.4em;
+    font-size: 2rem;
+}
+
+/*menu items div*/
+#menu-items-div {
+    display: inline-block;
+     width: 22em;
+    
+    /*border: 0.5px solid blue;  */
+    border: 0.5px solid rgb(0, 0, 23);
+}
+nav{
+    display: flex;
+    display: inline-block;
+}
+a{
+    display: inline-block;
+}
+
+/*menu items*/
+ul.no-bullets {
+    width: 20em;
+    display: inline-block;
+    /*display: none;*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 110%;
+    letter-spacing: 4px;
+}
+li{
+   /*display: inline-block;*/ 
+    width: fit-content;
+}
+/*Website Title*/
+#logo {
+    
+    display: inline-block;
+}
+
+#show{
+    display: contents;
+}
+
+/*spacing between menu items*/
+.no-bullets>li {
+    margin-bottom: 1em;
+}
+
+
+
 header a {
     text-decoration: none;
     color: inherit;
@@ -46,38 +133,19 @@ h1 {
     letter-spacing: 2px;
     color: #252525;
 }
-#js-menu{
-    border: none;
-    background-color: none;
-}
-.dropdown{
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
-    display: none;
-    font-size: 110%;
-    letter-spacing: 4px;
-    list-style-type: none;
-}
 
-#menu > li {
-    margin-bottom: 1em;
-}
-
-.active {
-    border-bottom: 1px solid #3a3a3a;
-}
 
 /* Main content */
 main {
-    
+    background-color: lightskyblue;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
 }
-.dropdown{
+
+.dropdown {
     z-index: 99;
 }
+
 /* Footer */
 footer {
     background-color: orange;
